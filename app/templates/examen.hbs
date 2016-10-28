@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			{{quiz-header title=model.name image=model.cover_img}}
+
+			{{#each model.questions as |question|}}
+			<p> {{question.text}}</p>
+			{{/each}}
+			
+			{{get-info code=model.code}}
+		</div> 
+
+	</div>
+</div>
